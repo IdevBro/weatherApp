@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Ob-havo</title>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <div class="left">
+          <img class="logo" src="./logo.svg" alt="Logo" />
+          <div class="temp">
+            <div class="tempNumber">
+              <span class="gradus" id="tempNumber">16°</span>
+              <div class="city_day">
+                <p class="city" id="cityText">London</p>
+                <p class="day" id="time"></p>
+              </div>
+            </div>
+            <div class="tempImg">
+              <i class="fa-solid fa-cloud"></i>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="search">
+            <input type="text" id="cityName" placeholder="Search Location..." />
+            <button onclick="getWeather()">Search</button>
+            <div class="searchIcon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <div class="info">
+            <p class="infoWeather" id="weatherInfo">
+              thunderstorm with light drizzle
+            </p>
+            <div class="tempRight">
+              <p>Temp max</p>
+              <div class="iconWeather">
+                <p id="tempMax">19°</p>
+                <i class="fa-solid fa-temperature-half"></i>
+              </div>
+            </div>
+            <div class="tempRight">
+              <p>Temp min</p>
+              <div class="iconWeather">
+                <p id="tempMin">19°</p>
+                <i class="fa-solid fa-temperature-half"></i>
+              </div>
+            </div>
+            <div class="tempRight">
+              <p>Wind</p>
+              <div class="iconWeather">
+                <p><span id="wind">5</span> km/h</p>
+                <i class="fa-solid fa-wind"></i>
+              </div>
+            </div>
+            <div class="tempRight">
+              <p>Himdity</p>
+              <div class="iconWeather">
+                <p><span id="himd">24</span> %</p>
+                <i class="fa-solid fa-droplet"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

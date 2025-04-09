@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url("./snow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.left {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100vh;
+  width: 60%;
+  padding: 40px;
+}
+
+span {
+  color: white;
+}
+
+.tempImg i {
+  font-size: 100px;
+  color: white;
+}
+
+.logo {
+  width: 80px;
+}
+
+.gradus {
+  font-size: 200px;
+}
+
+.city {
+  font-size: 64px;
+}
+.day {
+  font-size: 24px;
+}
+
+.city_day p {
+  color: white;
+}
+.city_day p:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+.tempNumber {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.temp {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+.right {
+  padding: 40px;
+  height: 100vh;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.251);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+input {
+  z-index: 2;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  gap: 40px;
+}
+.search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+  background: transparent;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.search input::placeholder {
+  color: white;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 150px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.searchIcon i {
+  font-size: 24px;
+  color: white;
+}
+
+.search button {
+  padding: 12px 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.infoWeather {
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.info {
+  margin-top: 120px;
+
+  width: 80%;
+  padding: 30px;
+}
+
+.tempRight {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+  color: white;
+  font-size: 24px;
+}
+
+.iconWeather {
+  display: flex;
+  gap: 20px;
+}
